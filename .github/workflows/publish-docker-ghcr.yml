@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Log into registry $REGISTRY
-        run: echo $GITHUB_TOKEN | docker login -u $USERNAME --password-stdin
+        run: echo $GITHUB_TOKEN | docker login $REGISTRY --username $USERNAME --password-stdin
         
       - name: Build the Docker image
         run: docker build --platform=linux/amd64 --file Dockerfile --tag $REGISTRY/$IMAGE_NAME:$IMAGE_VERSION .
