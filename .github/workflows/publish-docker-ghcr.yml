@@ -13,7 +13,7 @@ env:
   USERNAME: ${{ github.actor }}
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-  GITHUB_TOKEN: ${{ secrets.GH_PAT }
+  GITHUB_TOKEN: ${{ secrets.GH_PAT }}
   IMAGE_VERSION: ${{ secrets.IMAGE_VERSION }}
 
 jobs:
