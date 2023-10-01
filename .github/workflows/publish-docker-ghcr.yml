@@ -12,7 +12,7 @@ env:
   REGISTRY: ghcr.io
   USERNAME: ${{ github.actor }}
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: ${{ github.actor }}/ganache-server
   GITHUB_TOKEN: ${{ secrets.GH_PAT }}
   IMAGE_VERSION: ${{ secrets.IMAGE_VERSION }}
 
